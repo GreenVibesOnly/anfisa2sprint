@@ -1,67 +1,55 @@
-### Как запустить проект:
+# Anfisa for friends 
+Интернет-магазин мороженого с большим каталогом от учебной компании "Анфиса".
+
+## Функционал сайта
+
+- Сайт имеет 2 основные страницы: каталог с отфильтрованным по категории мороженым и главная страница с избранными администратором позициями.
+- Со страниц со списком позиций можно зайти в детали о конкретном мороженом, посмотреть его фотографию, описание, цену, тэги, входящие в состав топпинги и тип обёртки.
+- Администратор может добавлять и убирать позиции, изменять всю их информацию, а так же выбирать, какое мороженое будет отображаться на главной странице.
+- На странице "о проекте" можно посмотреть информацию о компании.
+
+В проекте реализована админ-зона с полным набором функций для модерации контента.
+
+## Технологии
+
+- Python
+- Django
+- Djangorestframework
+- HTML
+- SQLite3
+
+
+## Установка и запуск
 
 Клонировать репозиторий и перейти в него в командной строке:
-
 ```
-git clone https://github.com/yandex-praktikum/anfisa2sprint.git
-```
-
-```
-cd anfisa2sprint
+git clone <https or SSH URL>
+cd anfisa_for_friends
 ```
 
-Cоздать и активировать виртуальное окружение:
-
-Windows
-```
-python -m venv venv
-source venv/Scripts/activate
-```
-Linux/macOS
+Создать и активировать виртуальное окружение:
 ```
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-Обновить PIP
-
-Windows
-```
-python -m pip install --upgrade pip
-```
-Linux/macOS
+Обновить pip:
 ```
 python3 -m pip install --upgrade pip
 ```
 
-Установить зависимости из файла requirements.txt:
-
+Установить библиотеки:
 ```
 pip install -r requirements.txt
 ```
 
-Выполнить миграции:
-
-Windows
+Создать и выполнить миграции:
 ```
-python manage.py makemigrations
-python manage.py migrate
+python3 anfisa_for_friends/manage.py makemigrations
+python3 anfisa_for_friends/manage.py migrate
 ```
 
-Linux/macOS
+Запустить сервер django:
 ```
-python3 manage.py makemigrations
-python3 manage.py migrate
-```
-
-Запустить проект:
-
-Windows
-```
-python manage.py runserver
-```
-
-Linux/macOS
-```
-python3 manage.py runserver
+python3 anfisa_for_friends/manage.py runserver
 ```
