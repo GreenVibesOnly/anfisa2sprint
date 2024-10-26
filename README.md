@@ -53,3 +53,11 @@ python3 anfisa_for_friends/manage.py migrate
 ```
 python3 anfisa_for_friends/manage.py runserver
 ```
+
+Проект будет доступен по адресу: http://127.0.0.1:8000/
+
+Админ-зона по адресу: http://127.0.0.1:8000/admin/
+
+  
+## Автор проекта
+[Ксения Тетерчева](https://github.com/GreenVibesOnly/) 🌿
